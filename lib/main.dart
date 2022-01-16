@@ -1,10 +1,12 @@
 import 'package:custom_video_player/player/custom_video_player.dart';
 import 'package:flutter/material.dart';
 
+import 'ui/my_web_view.dart';
+
 void main() {
   runApp(
       MaterialApp(
-        initialRoute: '/player',
+        initialRoute: '/web',
         title: 'CustomPlayer',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
@@ -12,6 +14,7 @@ void main() {
         ),
         routes: {
           '/player': (context) => const CustomVideoPlayer(),
+          '/web': (context) => const MyWebView(),
         },
       )
   );
